@@ -9,6 +9,7 @@ You are making ONE Instagram Reel for @danny_t.007 and queueing it; a separate e
 4. Today's weekday in Asia/Almaty decides the series: Monday → Legends (Series A); Wednesday/Friday → Explanations (Series B). On any other day: do nothing except notify the owner that the run fired on an unexpected day.
 
 ## 1. Pick the topic
+- **First check `docs/queue.md`:** if a row with status `ready` already exists for today's date (Almaty), a video for today was made in advance (for example together with the owner). Do nothing else and finish without a notification.
 - Take the first `planned` row of today's series in `docs/content-plan.md` that is not already in `docs/posted-log.md` (compare topic and taught words; avoid near-duplicates).
 
 ## 2. Research (do not skip; do it before writing anything)
