@@ -40,7 +40,9 @@ You are making ONE Instagram Reel for @danny_t.007 and posting it automatically.
 ## 6. Publish the files
 - Copy into `reels/<date>-<slug>/`: `reel.mp4`, `cover.jpg`, `reel_voicebed.mp4` (only if under 50 MB), `research.md`, `script.md` (on-screen text + a voiceover timing table), and the episode's source (`index.html`/`episode.json`, `audio.py`).
 - Commit (end the message with the attribution lines given in your session instructions) and push to `main` (`git -c push.negotiate=true push`).
-- Wait for GitHub Pages: poll `gh api repos/danreal21213023/kazakh-legends-reels/pages/builds/latest` until `status` is `built` for your commit, then wait 60 s more. (The container can't open github.io directly.)
+- Wait for GitHub Pages (the container can't open github.io directly, and the `pages/builds` API is blocked by the proxy). Poll every 20 s, for up to 10 min:
+  `gh api "repos/danreal21213023/kazakh-legends-reels/commits/$(git rev-parse HEAD)/check-runs" --jq '.check_runs[] | .name+" "+.status+" "+(.conclusion//"")'`
+  until the runs show `completed success`, and `gh api "repos/danreal21213023/kazakh-legends-reels/deployments?per_page=1" --jq '.[0].sha'` equals your HEAD. Then wait 60 s more.
 - Video URL: `https://danreal21213023.github.io/kazakh-legends-reels/reels/<date>-<slug>/reel.mp4`, cover: the same folder + `/cover.jpg`.
 
 ## 7. Post (once)
