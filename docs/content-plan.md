@@ -32,7 +32,7 @@ Focus: one common mistake or rule per video, especially ones Kazakh- and Russian
 
 | # | Topic | Typical mistake | Status | Notes for the run |
 |---|---|---|---|---|
-| B1 | "I am agree" ✗ → "I agree" ✓ | *I am agree with you* | queued 2026-11-27 (made with the owner, template approved) | agree is a verb, not an adjective |
+| B1 | "I am agree" ✗ → "I agree" ✓ | *I am agree with you* | posted 2026-11-25 (made with the owner, template approved) | agree is a verb, not an adjective |
 | B2 | a vs an — it's the SOUND, not the letter | *a hour, an university* | planned | an hour, a university, an MBA |
 | B3 | "listen music" ✗ → "listen TO music" | *I listen music* | planned | listen to / hear / look at |
 | B4 | "I have 20 years" ✗ → "I am 20" | *I have 20 years* | planned | age uses be |
