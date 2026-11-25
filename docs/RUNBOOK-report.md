@@ -9,7 +9,7 @@ Goal: a short, useful morning report for the owner of @danny_t.007 on how the Re
    - Account: `followers_count` (today), and `follower_count_1d` (daily new followers; Instagram only gives this to accounts with 100+ followers, so if it's empty, say so).
 3. Compare with yesterday's row in `docs/metrics-log.csv` to get changes (followers, and each post's views/likes/saves). Append today's snapshot (one row per post plus one account row) and commit/push.
 4. Write the report (plain language, short, phone-friendly):
-   - **Last night:** what was posted (from posted-log; say "nothing scheduled" on non-posting days, or "the run did not post" if a Mon/Wed/Fri run left no new row).
+   - **Yesterday & today:** what was posted yesterday evening (from posted-log), and what is queued for tonight's 19:00 post (from `docs/queue.md`, status `ready`). On a Mon/Wed/Fri with no `ready` row, say the night run did not queue a video.
    - **Followers:** total and change since yesterday.
    - **Each series post from the last 30 days**, newest first: title, views, likes, saves, shares, comments, average watch time in seconds, skip rate, with the change since yesterday.
    - **Best performer this week**, and one concrete, data-based suggestion (e.g. a hook style, length or topic type that is working). If there isn't enough data yet, say so; don't invent trends.
